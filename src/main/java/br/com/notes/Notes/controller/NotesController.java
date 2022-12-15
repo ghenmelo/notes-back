@@ -11,6 +11,7 @@ import java.util.List;
 @RestController
 @ResponseStatus(HttpStatus.OK)
 @ResponseBody
+@CrossOrigin("*")
 public class NotesController {
 
     @Autowired
