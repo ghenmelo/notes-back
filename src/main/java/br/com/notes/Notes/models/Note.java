@@ -19,7 +19,7 @@ public class Note {
     private Long id;
     private String text;
 
-    private Boolean urgent;
+    private Boolean urgent = Boolean.FALSE;
 
     private LocalDateTime date = LocalDateTime.now();
 }
