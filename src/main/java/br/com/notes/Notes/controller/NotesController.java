@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@ResponseStatus(HttpStatus.ACCEPTED)
+@ResponseStatus(HttpStatus.OK)
 @ResponseBody
 public class NotesController {
 
