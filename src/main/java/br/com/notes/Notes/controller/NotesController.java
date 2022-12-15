@@ -27,8 +27,8 @@ public class NotesController {
         return notesRepository.save(note);
     }
 
-    @PutMapping
-    public Note putNote(@RequestParam(name = "id") Long id, @RequestBody Note note) {
+    @PutMapping("/{id}")
+    public Note putNote(@PathVariable(name = "id") Long id, @RequestBody Note note) {
         Note noteBanco = notesRepository
                 .findById(id)
                 .orElse(new Note());
@@ -39,8 +39,8 @@ public class NotesController {
         return notesRepository.save(noteBanco);
     }
 
-    @DeleteMapping
-    public void deleteNote(@RequestParam(name = "id") Long id) {
+    @DeleteMapping("/{id}")
+    public void deleteNote(@PathVariable(name = "id") Long id) {
         notesRepository.deleteById(id);
     }
 
