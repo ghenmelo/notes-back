@@ -21,5 +21,5 @@ public class Note {
 
     private Boolean urgent;
 
-    private LocalDateTime date;
+    private LocalDateTime date = LocalDateTime.now();
 }
