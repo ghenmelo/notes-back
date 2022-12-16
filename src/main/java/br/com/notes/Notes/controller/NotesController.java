@@ -25,7 +25,7 @@ public class NotesController {
     @GetMapping
     @Cacheable(cacheNames = "notes")
     public List<Note> getNotes() {
-        System.out.println("passou");
+        System.out.println("Buscando Notas");
         return notesRepository.findAll();
     }
 
