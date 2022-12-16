@@ -49,7 +49,7 @@ public class NotesController {
     }
 
     @DeleteMapping("/{id}")
-    @CacheEvict(cacheNames = "notes", key = "#note.id")
+    @CacheEvict(cacheNames = "notes", key = "#id")
     public void deleteNote(@PathVariable(name = "id") Long id) {
         notesRepository.deleteById(id);
     }
