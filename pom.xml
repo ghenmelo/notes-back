@@ -72,7 +72,7 @@
 						</exclude>
 					</excludes>
 				</configuration>
-			</plugin>
+			</plugin> 
 		</plugins>
 	</build> 
 
